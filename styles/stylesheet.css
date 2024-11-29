@@ -1,0 +1,74 @@
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+body {
+  background-color: #FFF7F1;
+  margin: 0px
+}
+
+.tab-content {
+  display: block; /* Hide all content by default */
+  margin: 10% 25%;
+}
+
+html {
+  cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>🦄</text></svg>"), auto
+}
+
+header {
+  display: flex;
+  align-items: center;  /* Vertically center the content */
+}
+
+nav {
+  flex-grow: 1;  /* Makes the nav element take up remaining space */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;  /* Center the navigation links */
+  padding: 0px;
+}
+
+nav ul li {
+  margin: 0 24px;  /* Space between each list item */
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 16px;
+}
+
+nav ul li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+nav ul li a:hover {
+  background-color: #F5004F;  /* Hover effect */
+  color: #FFFBE6;
+}
+
+nav ul li a.active {
+  background-color: #7F27FF;
+  color: #F6FDC3;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer{
+  /* margin-top: auto; */
+  margin-top: 0px;
+}

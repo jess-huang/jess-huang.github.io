@@ -1,0 +1,72 @@
+.projectsContainer {
+  position: relative;
+  width: 100px;
+}
+  
+.projectImage {
+  display: block;
+  width: 100px;
+  height: auto;
+}
+  
+.overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+  
+.projectsContainer:hover .overlay {
+  opacity: 1;
+}
+
+/* Style for the scroll container */
+.scroll-container {
+  flex-direction: column;
+  display: flex;  /* Use Flexbox to display the children (links) horizontally */
+  overflow-x: auto;  /* Enable horizontal scrolling */
+  padding: 20px 0;  /* Add vertical padding to the container */
+  gap: 40px;  /* Space between each item */
+  scroll-behavior: smooth;  /* Smooth scrolling */
+
+  /* Hide scrollbar for all browsers */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, and Opera */
+}
+  
+/* Style for the individual rounded rectangles */
+.rounded-rectangle {
+  display: flex;
+  gap: 40px;  /* Space between each item */
+  padding: 160px 240px;  /* Add padding to each rectangle */
+  background-color: #ddddddeb;  /* Set the background color */
+  color: #1D1E18;  /* Text color */
+  text-decoration: none;  /* Remove the underline from the link */
+  border-radius: 25px;  /* Create rounded corners */
+  text-align: center;  /* Center the text inside */
+  transition: background-color 0.3s ease;  /* Smooth background color transition */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.card1:hover {
+  background-color: #588157;  /* Change background color on hover */
+  color: #D9FFF5;
+  cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>🏸</text></svg>"), auto
+}
+
+.card2:hover {
+  background-color: #27187E;  /* Change background color on hover */
+  color: #E5EAFA;
+}
+
+#animationDiv {
+  font-size:48px;
+}
