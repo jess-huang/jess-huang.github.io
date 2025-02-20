@@ -83,7 +83,7 @@ p, ul {
   font-family: "Tiny5", serif; /* Use a pixelated font */
   font-weight: 400;
   font-style: normal;
-  font-size: 1em;
+  font-size: 1rem;
   padding: 0.8em 1.6em; /* Adjust the padding for a blocky, square look */
   background-color: #D7263D; /* Button color */
   transition: all 0.2s ease-in-out; /* Smooth transition for hover effect */
@@ -101,24 +101,24 @@ p, ul {
 }
 
 @media (max-width: 768px) {
-  h1, h2 {
-      font-size: 18px;
+  h1 {
+    font-size: 3em;
+  }
+  
+  h2 {
+      font-size: 1.6em;
   }
 
   .content {
     padding: 4em 12em;
-    font-size: 14px;
+    font-size: 1.8em;
   }
 }
 
 @media (max-width: 425px) {
-  h1, h2 {
-      font-size: 16px;
-  }
-
   .content {
-    padding: 3em 7em; /* Smaller padding for mobile */
-    font-size: 12px;
+    padding: 2em 5em; /* Smaller padding for mobile */
+    font-size: 1em;
   }
 
   .content .content-paragraph {
