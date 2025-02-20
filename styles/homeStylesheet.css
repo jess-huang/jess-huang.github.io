@@ -44,10 +44,10 @@
 /* Style for the individual rounded rectangles */
 .rounded-rectangle {
   display: flex;
-  gap: 40px;  /* Space between each item */
-  padding: 160px 240px;  /* Add padding to each rectangle */
-  background-color: #ddddddeb;  /* Set the background color */
-  color: #1D1E18;  /* Text color */
+  gap: 2vh;  /* Space between each item */
+  padding: 8vh 4vw;  /* Add padding to each rectangle */
+  background-color: white;  /* Set the background color */
+  color: navy;  /* Text color */
   text-decoration: none;  /* Remove the underline from the link */
   border-radius: 25px;  /* Create rounded corners */
   text-align: center;  /* Center the text inside */
@@ -65,8 +65,4 @@
 .card2:hover {
   background-color: #27187E;  /* Change background color on hover */
   color: #E5EAFA;
-}
-
-#animationDiv {
-  font-size:48px;
 }

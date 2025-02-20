@@ -1,0 +1,50 @@
+.image-container {
+    position: relative;
+}
+
+.landing-image {
+    width: 100%; /* Full width of the parent container */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 16vh;
+}
+
+.app-store {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2vh;
+    margin: auto;
+    align-items: center;
+    margin-top: 12vh;
+    text-align: center;
+    position: absolute;
+    top: 24%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.app-icon {
+    width: 8vw;
+}
+
+@media (max-width: 768px) {
+    .landing-image {
+        margin-top: 24vh;
+    }
+}
+
+@media (max-width: 425px) {
+    .landing-image {
+        margin-top: 40vh;
+        top: 0;
+    }
+
+    .app-store {
+        gap: 1vh;
+        font-size: 10px;
+    }
+
+    .app-icon {
+        width: 24vw;
+    }
+}
