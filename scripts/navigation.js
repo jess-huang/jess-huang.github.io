@@ -36,8 +36,6 @@ fetch('navigation.html')
 // Toggle the mobile menu
 window.onload = function() {
   const hamburger = document.querySelector('.hamburger');
-  const hamburgerIcon = document.getElementById('hamburger-icon');
-  const navLinks = document.querySelector('.navbar-links');
   const close = document.getElementById('close-button');
 
   /// Hamburger Menu Logic
@@ -50,12 +48,12 @@ window.onload = function() {
     closeNav()
     document.getElementById("sidenav").classList.remove('active')
   });
+}
 
-  function openNav() {
-    document.getElementById("sidenav").style.width = "250px";
-  }
-  
-  function closeNav() {
-    document.getElementById("sidenav").style.width = "0";
-  }
+function openNav() {
+  document.getElementById("sidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.width = "0";
 }

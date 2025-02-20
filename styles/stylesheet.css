@@ -42,6 +42,7 @@ p, ul {
   z-index: 1000; /* Keeps it on top of other content */
   padding: 2em;
   display: inline-block;
+  z-index: 10;
 }
 
 .navbar-links li a, .sidenav-content a {
@@ -100,6 +101,7 @@ p, ul {
   border: none;
   font-size: 24px;
   fill: white;
+  padding: 1em;
 }
 
 /* Create a pixelated button effect */
@@ -151,6 +153,10 @@ p, ul {
 
   .hamburger {
     display: block; /* Show hamburger icon on mobile */
+  }
+
+  .navbar {
+    padding: 0;
   }
 
   .navbar-links {
