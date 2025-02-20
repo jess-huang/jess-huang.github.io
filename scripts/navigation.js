@@ -6,7 +6,7 @@ fetch('navigation.html')
 
         // Navigation bar
         const tabs = document.querySelectorAll('.tab');
-        const sidetabs = document.querySelectorAll('.sidetab');
+        const tabIcons = document.querySelectorAll('.tab-icon');
         
         // Get the current page's filename
         const currentPage = window.location.pathname.split('/').pop();
@@ -21,8 +21,8 @@ fetch('navigation.html')
           }
         });
 
-        // Loop through all side tabs
-        sidetabs.forEach(tab => {
+        // Loop through all tab icons
+        tabIcons.forEach(tab => {
           // Remove the 'active' class from all tabs
           tab.classList.remove('active');
 
@@ -32,28 +32,3 @@ fetch('navigation.html')
           }
         });
     });
-
-// Toggle the mobile menu
-window.onload = function() {
-  const hamburger = document.querySelector('.hamburger');
-  const close = document.getElementById('close-button');
-
-  /// Hamburger Menu Logic
-  hamburger.addEventListener('click', function () {
-    openNav()
-    document.getElementById("sidenav").classList.add('active')
-  });
-
-  close.addEventListener('click', function () {
-    closeNav()
-    document.getElementById("sidenav").classList.remove('active')
-  });
-}
-
-function openNav() {
-  document.getElementById("sidenav").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("sidenav").style.width = "0";
-}

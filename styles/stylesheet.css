@@ -42,10 +42,9 @@ p, ul {
   z-index: 1000; /* Keeps it on top of other content */
   padding: 2em;
   display: inline-block;
-  z-index: 10;
 }
 
-.navbar-links li a, .sidenav-content a {
+.navbar-links li a, .tab-icon {
   text-decoration: none;
   color: white;
 }
@@ -59,49 +58,24 @@ p, ul {
   color: #FF715B;
 }
 
-.navbar-links li, .sidenav-content a {
+.navbar-links li {
   display: block;
   padding: 0.8em;
 }
 
-.sidenav-content a.active {
-  color: #FF715B;
-}
-
-.sidenav {
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  transition: 0.5s;
-  overflow-x: hidden;
-  padding-top: 2em;
+.navbar-icons {
   display: none;
-}
-
-.sidenav-content {
-  display: flex;
   flex-direction: column;
-  padding-left: 2em;
-  position: relative
+  padding-top: 1em;
 }
 
-#close-button {
-  height: 2em;
-  width: 2em;
-  right: 2em;
-  margin-left: 72%;
-}
-
-/* Hamburger Icon */
-.hamburger {
-  display: none; /* Hide by default */
-  background: none;
-  border: none;
-  font-size: 24px;
-  fill: white;
+.tab-icon {
+  width: 1.6em;
   padding: 1em;
+}
+
+.tab-icon.active {
+  filter: invert(60%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)
 }
 
 /* Create a pixelated button effect */
@@ -151,8 +125,8 @@ p, ul {
     padding: 1em 0em;
   }
 
-  .hamburger {
-    display: block; /* Show hamburger icon on mobile */
+  .navbar-icons {
+    display: flex; /* Show hamburger icon on mobile */
   }
 
   .navbar {
@@ -161,9 +135,5 @@ p, ul {
 
   .navbar-links {
     display: none; /* Hide nav links by default on mobile */
-  }
-
-  .sidenav.active {
-    display: block;
   }
 }
